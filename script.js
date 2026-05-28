@@ -392,34 +392,49 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      7. CONTACT FORM VALIDATION & POPUP CONFIRMATION
      ========================================================================== */
+  // Updated contact form handling to POST data to backend
   const contactForm = document.getElementById('contact-form');
   const successModal = document.getElementById('success-modal');
   const modalCloseBtn = document.getElementById('modal-close-btn');
 
+  /** Send the contact payload to the backend and show feedback */
+  async function submitContact(formData) {
+    try {
+      const response = await fetch('http://localhost:4000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error('Network response not ok');
+
+      // Show thank‑you modal and reset form
+      successModal.classList.add('visible');
+      contactForm.reset();
+    } catch (err) {
+      console.error('❗ Contact submission failed →', err);
+      alert('Sorry, your message could not be sent. Please try again later.');
+    }
+  }
+
   if (contactForm && successModal) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      // Simple custom visual feedback instead of actual server transport
-      successModal.classList.add('visible');
-      
-      // Flush form inputs
-      contactForm.reset();
+      const payload = {
+        name: document.getElementById('form-name').value.trim(),
+        email: document.getElementById('form-email').value.trim(),
+        message: document.getElementById('form-message').value.trim(),
+      };
+      submitContact(payload);
     });
 
-    const closeModal = () => {
-      successModal.classList.remove('visible');
-    };
+    const closeModal = () => successModal.classList.remove('visible');
 
-    if (modalCloseBtn) {
-      modalCloseBtn.addEventListener('click', closeModal);
-    }
-    
-    // Close modal when clicking external overlay bounds
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+
+    // Close modal when clicking on overlay background
     successModal.addEventListener('click', (e) => {
-      if (e.target === successModal) {
-        closeModal();
-      }
+      if (e.target === successModal) closeModal();
     });
   }
 
