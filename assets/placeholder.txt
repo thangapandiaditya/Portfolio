@@ -1,0 +1,5 @@
+To add your profile picture to the website:
+1. Rename your profile image file to "profile.jpg".
+2. Save it directly in this "assets" directory (c:\portfoilo\assets\profile.jpg).
+
+The website is pre-configured to automatically detect and display "profile.jpg" here. If this image is not present or cannot be loaded, the website will automatically display a clean tech-styled SVG avatar fallback instead.

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thangapandi Aditya | Electronics & Software Engineer</title>
+  <meta name="description" content="Portfolio of Thangapandi Aditya - Electronics & Communication Engineering Graduate bridging IoT/Embedded Systems and Full-Stack Web/AI Development.">
+  
+  <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Ambient Glow Elements -->
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-amber"></div>
+
+  <!-- Custom Glowing Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="sticky-header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-text">Thangapandi Aditya</span>
+        <span class="logo-accent">.</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO (Above the Fold) -->
+    <section id="home" class="hero-section">
+      <!-- Reactive Canvas for Code/Hardware Mesh -->
+      <canvas id="particle-canvas" class="particle-canvas"></canvas>
+      
+      <div class="container hero-container">
+        <div class="hero-badge" data-glow="software">
+          <span class="badge-dot"></span>
+          Software &amp; Hardware Architect
+        </div>
+        <h1 class="hero-headline">
+          Engineering the <span class="text-gradient-cyan">Intersection</span> of Code and <span class="text-gradient-amber">Hardware</span>.
+        </h1>
+        <p class="hero-subheadline">
+          Full-Stack Developer &amp; IoT Engineer specializing in AI-driven accessibility solutions, smart automation, and robust web applications.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-glow-cyan">
+            <span>View My Work</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#" class="btn btn-outline-amber" id="download-resume-btn">
+            <span>Download Resume</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" data-glow="software">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" data-glow="hardware">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Down Arrow Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </section>
+
+    <!-- SECTION 2: ABOUT & SKILLS -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-subtitle">Discover My Story</span>
+          <h2 class="section-title">About Me &amp; Skills</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Column -->
+          <div class="about-bio-card glass-card">
+            <div class="bio-header">
+              <div class="bio-avatar">
+                <img src="assets/profile.jpg" alt="Thangapandi Aditya" class="avatar-img" onerror="if (this.src.indexOf('profile.jpg.jpeg') !== -1) { this.src = 'assets/profile.jpeg'; } else if (this.src.indexOf('profile.jpg') !== -1) { this.src = 'assets/profile.jpg.jpeg'; } else if (this.src.indexOf('profile.jpeg') !== -1) { this.src = 'assets/profile.png'; } else { this.style.display='none'; this.nextElementSibling.style.display='block'; }">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="avatar-svg" style="display:none;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <div class="bio-meta">
+                <h3>Thangapandi Aditya</h3>
+                <p>Electronics &amp; Communication Graduate</p>
+                <div class="cgpa-badge">CGPA: 9.23 / 10</div>
+              </div>
+            </div>
+            <div class="bio-content">
+              <p>
+                I am a highly motivated B.Tech graduate in <strong>Electronics &amp; Communication Engineering</strong> from <strong>PBR Visvodaya Institute of Technology and Science</strong>. I thrive at the fascinating junction where digital software logic coordinates physical hardware components.
+              </p>
+              <p>
+                Equipped with strong technical capabilities in full-stack architecture, machine learning model building, and embedded IoT systems design, I aim to craft accessibility tools, automated solutions, and enterprise software that solve real-world problems.
+              </p>
+            </div>
+            <div class="education-details">
+              <div class="edu-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="edu-icon"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                <div>
+                  <h4>Bachelor of Technology - ECE</h4>
+                  <p class="edu-sub">PBR Visvodaya Institute of Technology and Science</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Grid Column -->
+          <div class="skills-column">
+            <!-- Languages Card -->
+            <div class="skills-card glass-card" data-glow="software">
+              <div class="skills-card-header">
+                <div class="skills-icon-wrapper cyan">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3>Programming Languages</h3>
+              </div>
+              <div class="skills-chips">
+                <span class="skill-chip" data-desc="Procedural systems programming &amp; microcontrollers">C</span>
+                <span class="skill-chip" data-desc="Modern ES6+, asynchronous DOM &amp; scripting">JavaScript</span>
+                <span class="skill-chip" data-desc="Robust enterprise object-oriented programming">Java</span>
+                <span class="skill-chip" data-desc="AI/ML modeling, script automation, data analyses">Python</span>
+                <span class="skill-chip" data-desc="Semantic document layout standard">HTML</span>
+                <span class="skill-chip" data-desc="Modern grids, flexbox, custom variables, layouts">CSS</span>
+              </div>
+            </div>
+
+            <!-- Frameworks Card -->
+            <div class="skills-card glass-card" data-glow="software">
+              <div class="skills-card-header">
+                <div class="skills-icon-wrapper cyan">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                </div>
+                <h3>Frameworks &amp; Libraries</h3>
+              </div>
+              <div class="skills-chips">
+                <span class="skill-chip" data-desc="Component-driven front-end UI library">React</span>
+                <span class="skill-chip" data-desc="Responsive grid framework for rapid layout creation">Bootstrap</span>
+                <span class="skill-chip" data-desc="Enterprise backend REST API generation framework">Spring Boot</span>
+              </div>
+            </div>
+
+            <!-- Tools & Platforms Card -->
+            <div class="skills-card glass-card" data-glow="hardware">
+              <div class="skills-card-header">
+                <div class="skills-icon-wrapper amber">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <h3>Tools &amp; Platforms</h3>
+              </div>
+              <div class="skills-chips">
+                <span class="skill-chip" data-desc="Distributed version control standard">GIT</span>
+                <span class="skill-chip" data-desc="Cloud-based code repository hosting provider">GitHub</span>
+                <span class="skill-chip" data-desc="Graphical client for manual API endpoints testing">Postman</span>
+                <span class="skill-chip" data-desc="High-fidelity interactive UI/UX prototyping interface">Figma</span>
+                <span class="skill-chip" data-desc="Primary operations environment system">Windows</span>
+                <span class="skill-chip" data-desc="Prototyping microcontroller board &amp; IDE interface">Arduino</span>
+                <span class="skill-chip" data-desc="Single-board computing module for edge processing">Raspberry Pi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Tooltip for Skills -->
+        <div id="skill-tooltip" class="skill-tooltip">Tooltip Text</div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED PROJECTS & PUBLICATIONS -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-subtitle">Real-World Deployments</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Supply Chain -->
+          <div class="project-card-container">
+            <div class="project-card glass-card" data-tilt data-glow="software">
+              <div class="project-glow"></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-icon cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+                <h3 class="project-title">Drug Inventory &amp; Supply Chain Tracking System</h3>
+                <p class="project-description">
+                  A secure, enterprise-grade full-stack web application designed to track drug logistics. Implements automated vendor verification, multi-step product approvals, and strict role-based access control to prevent counterfeit injections.
+                </p>
+                <div class="project-tags">
+                  <span class="tag tag-cyan">Java</span>
+                  <span class="tag tag-cyan">Spring Boot</span>
+                  <span class="tag tag-cyan">MySQL</span>
+                  <span class="tag tag-cyan">REST APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: IEEE Published Assistive Communication -->
+          <div class="project-card-container">
+            <div class="project-card glass-card" data-tilt data-glow="both">
+              <div class="project-glow"></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-icon mixed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                  </div>
+                  <div class="header-right-wrapper">
+                    <span class="ieee-badge">IEEE ICETEA 2025 Publication</span>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">Assistive Communication System</h3>
+                <p class="project-description">
+                  A high-impact, bi-directional accessibility framework converting complex sign language gestures to clear speech audio, and spoken words to animated visual markers. Built to break barrier gaps for speech and hearing-impaired communities.
+                </p>
+                <div class="project-tags">
+                  <span class="tag tag-cyan">Machine Learning</span>
+                  <span class="tag tag-cyan">MediaPipe</span>
+                  <span class="tag tag-amber">NLP</span>
+                  <span class="tag tag-cyan">Deep Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Smart Vehicle and Helmet -->
+          <div class="project-card-container">
+            <div class="project-card glass-card" data-tilt data-glow="hardware">
+              <div class="project-glow"></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-icon amber">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+                <h3 class="project-title">Smart Vehicle Automation &amp; IoT Safety Helmet</h3>
+                <p class="project-description">
+                  An embedded IoT mesh combining intelligent rule-based vehicle safety systems with a coal mine worker's helmet. Integrates real-time sensing of hazardous gas concentrations, temperature extremes, tilt collisions, and emergency alerts.
+                </p>
+                <div class="project-tags">
+                  <span class="tag tag-amber">Embedded Systems</span>
+                  <span class="tag tag-amber">IoT</span>
+                  <span class="tag tag-amber">Sensors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: HACKATHON WINS & HIGHLIGHTS -->
+    <section id="hackathons" class="hackathons-section section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-subtitle">Championships &amp; Awards</span>
+          <h2 class="section-title">Hackathon Wins &amp; Highlights</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Vertical Spine -->
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item glass-card" data-glow="hardware">
+            <div class="timeline-dot gold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="timeline-meta">
+              <span class="prize-badge gold">1st Prize Winner</span>
+              <span class="timeline-date">2024</span>
+            </div>
+            <div class="timeline-content">
+              <h3>TechnoPulse-2024</h3>
+              <p>
+                Awarded top honors for designing and presenting an **IoT-Based Safety Helmet for Coal Mine Workers**. The presentation demonstrated hardware sensor polling and wireless emergency telemetry reporting under extreme conditions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item glass-card" data-glow="both">
+            <div class="timeline-dot silver">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="timeline-meta">
+              <span class="prize-badge silver">2nd Prize Winner</span>
+              <span class="timeline-date">2024</span>
+            </div>
+            <div class="timeline-content">
+              <h3>HACKADEMIA 2K24</h3>
+              <p>
+                  Developed a rule-based vehicle automation system to detect traffic signals, sensitive zones, and lighting conditions for safety assistance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item glass-card" data-glow="software">
+            <div class="timeline-dot silver">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="timeline-meta">
+              <span class="prize-badge silver">2nd Prize Winner</span>
+              <span class="timeline-date">2025</span>
+            </div>
+            <div class="timeline-content">
+              <h3>National Level AI Autonomous Hackathon 2025</h3>
+              <p>
+                  Assistive Communication System | Machine Learning, MediaPipe • Built a bi-directional assistive system that converts sign language gestures to speech and speech to sign-language GIFs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item glass-card" data-glow="both">
+            <div class="timeline-dot participant">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+            </div>
+            <div class="timeline-meta">
+              <span class="prize-badge participant">Finalist &amp; Participant</span>
+              <span class="timeline-date">Recent Highlights</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Sindhanai Hackathon &amp; Empower Tech</h3>
+              <p>
+                 - **Sindhanai Hackathon — SRM TRP Engineering College**: Developed "RoadGuard," an AI-based road safety system with real-time monitoring. It detects driver drowsiness and distraction and issues emergency vehicle alerts.
+                 - **Empower Tech Hackathon 2025 — VIT Chennai**: Assistive Communication System | Machine Learning, MediaPipe • Built a bi-directional assistive system that converts sign language gestures to speech and speech to sign-language GIFs.
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <div class="title-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Card -->
+          <div class="contact-info-column">
+            <div class="contact-card glass-card" data-glow="software">
+              <h3>Let's Work Together</h3>
+              <p class="contact-pitch">
+                Whether you have an interesting job opening, a hardware-software project idea, or simply want to say hello, feel free to drop a message or connect directly!
+              </p>
+              
+              <div class="info-items">
+                <a href="mailto:thangapandiaditya@gmail.com" class="info-item-link">
+                  <div class="info-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <span class="info-label">Email Me</span>
+                    <span class="info-value">thangapandiaditya@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+919381448501" class="info-item-link">
+                  <div class="info-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <span class="info-label">Call / WhatsApp</span>
+                    <span class="info-value">+91-9381448501</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-column">
+            <form id="contact-form" class="contact-form glass-card">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" required placeholder=" ">
+                <label for="form-name" class="form-label">Full Name</label>
+                <span class="form-border"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" required placeholder=" ">
+                <label for="form-email" class="form-label">Email Address</label>
+                <span class="form-border"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea id="form-message" class="form-textarea" required placeholder=" " rows="5"></textarea>
+                <label for="form-message" class="form-label">Your Message</label>
+                <span class="form-border"></span>
+              </div>
+
+              <button type="submit" class="btn btn-glow-cyan form-submit-btn">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Modal for Contact Form Success -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-card glass-card">
+      <div class="modal-success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <h2>Message Transmitted!</h2>
+      <p>Thank you for reaching out. Your message has been logged, and Thangapandi Aditya will establish connection soon.</p>
+      <button class="btn btn-glow-cyan modal-close-btn" id="modal-close-btn">Acknowledge</button>
+    </div>
+  </div>
+
+  <!-- Interactive Digital CV/Resume Modal (Printable) -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="resume-modal-container glass-card">
+      <div class="resume-modal-header">
+        <h2>Curriculum Vitae</h2>
+        <div class="resume-modal-actions">
+          <button class="btn btn-glow-cyan" id="resume-print-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print PDF
+          </button>
+          <button class="btn btn-outline-amber" id="resume-close-btn">Close</button>
+        </div>
+      </div>
+      
+      <!-- Printable CV Content -->
+      <div class="printable-cv" id="printable-cv">
+        <header class="cv-header">
+          <h1>THANGAPANDI ADITYA</h1>
+          <p class="cv-subtitle">Electronics &amp; Communication Engineer | IoT &amp; Full-Stack AI Developer</p>
+          <div class="cv-meta">
+            <span>Email: thangapandiaditya@gmail.com</span>
+            <span>|</span>
+            <span>Phone: +91-9381448501</span>
+            <span>|</span>
+            <span>Location: Andhra Pradesh, India</span>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Education</h2>
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <strong>Bachelor of Technology (B.Tech) - ECE | CGPA: 9.23 / 10</strong>
+              <span class="cv-item-date">2021 – 2025</span>
+            </div>
+            <p>PBR Visvodaya Institute of Technology and Science, Kavali</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Core Skills</h2>
+          <div class="cv-skills-grid">
+            <p><strong>Languages:</strong> C, JavaScript (ES6+), Java, Python, HTML5, CSS3</p>
+            <p><strong>Frameworks:</strong> React, Bootstrap, Spring Boot</p>
+            <p><strong>Tools/Platforms:</strong> GIT, GitHub, Postman, Figma, Windows, Arduino, Raspberry Pi</p>
+            <p><strong>Specializations:</strong> IoT Networks, Embedded Systems, Machine Learning, Deep Learning, REST APIs</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Key Projects</h2>
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <strong>Drug Inventory &amp; Supply Chain Tracking System</strong>
+            </div>
+            <p class="cv-desc"><em>Tech Stack: Java, Spring Boot, MySQL, REST APIs</em></p>
+            <p>Designed a secure full-stack logistics portal. Features role-based multi-vendor hierarchies, secure cryptographic verification workflows, and database transaction tracking to eliminate pharmaceutical counterfeiting routes.</p>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <strong>Assistive Communication System (IEEE Published)</strong>
+            </div>
+            <p class="cv-desc"><em>Tech Stack: Machine Learning, MediaPipe, NLP, Deep Learning</em></p>
+            <p>Developed a real-time, bi-directional translation system mapping complex sign gestures to dynamic speech audio and spoken words to accessibility cues. Published research paper in **IEEE ICETEA 2025** conferences.</p>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-header">
+              <strong>Smart Vehicle Automation &amp; IoT Safety Helmet</strong>
+            </div>
+            <p class="cv-desc"><em>Tech Stack: Embedded C, Arduino, ESP32, IoT Sensors</em></p>
+            <p>Created interconnected hardware safety products, including an intelligent mining helmet polling toxic gas percentages, fall shocks, and ambient heat indices alongside an anti-drowsiness vehicle throttle regulator.</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section-title">Hackathon Honors &amp; Achievements</h2>
+          <ul class="cv-list">
+            <li><strong>1st Prize Winner | TechnoPulse-2024</strong>: Awarded for IoT-Based Safety Helmet for Coal Mine Workers.</li>
+            <li><strong>2nd Prize Winner | HACKADEMIA 2K24</strong>: Smart Vehicle Automation | Embedded Systems, IoT • Developed a rule-based vehicle automation system to detect traffic signals, sensitive zones, and lighting conditions for safety assistance.</li>
+            <li><strong>2nd Prize Winner | National Level AI Autonomous Hackathon 2025</strong>: Assistive Communication System | Machine Learning, MediaPipe • Built a bi-directional assistive system that converts sign language gestures to speech and speech to sign-language GIFs.</li>
+            <li><strong>Finalist &amp; Presenter</strong>: Sindhanai Hackathon (RoadGuard AI) and Empower Tech (IoT current monitoring).</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>Designed &amp; Built by Thangapandi Aditya &copy; 2026</p>
+      <div class="footer-glow-line"></div>
+    </div>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
